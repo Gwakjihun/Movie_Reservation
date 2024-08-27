@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <title>Main</title>
+    <style>
+      h1 {
+        text-align: center;
+      }
+
+      #txt_welcome {
+        text-align: center;
+        margin-bottom: 50px;
+      }
+
+      .card {
+        text-align: center;
+      }
+
+      .card_title {
+        font-size: 20px;
+      }
+
+      .card_button {
+        font-size: 25px;
+        width: 150px;
+        height: 30px;
+      }
+
+      .card_img {
+        width: 300px;
+        height: 300px;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Movie Reservation</h1>
+    <div id="txt_welcome">
+      영화관에 오신 것을 환영합니다! <br />
+      즐거운 관람 되십시오.
+      <br />
+      <br />
+      <a href="./orderlist.html"> Movie Ticket List </a>
+    </div>
+    <div style="display: grid; grid-template-columns: 1fr 1fr 1fr">
+      <div class="card">
+        <img class="card_img" src="./img/redRacket.png" />
+        <p class="card_title">범죄도시3</p>
+        <input
+          class="card_button"
+          type="button"
+          value="Reservation"
+          onclick="alert('남은 좌석 : 12석');"
+        />
+      </div>
+      <div class="card">
+        <img class="card_img" src="./img/blueRacket.png" />
+        <p class="card_title">인사이드 아웃2</p>
+        <input
+          class="card_button"
+          type="button"
+          value="Reservation"
+          onclick="alert('남은 좌석 : 32석');"
+        />
+      </div>
+      <div class="card">
+        <img class="card_img" src="./img/blackRacket.png" />
+        <p class="card_title">파묘</p>
+        <input
+          class="card_button"
+          type="button"
+          value="Reservation"
+          onclick="alert('남은 좌석이 없습니다.');"
+        />
+      </div>
+    </div>
+  </body>
+</html>
